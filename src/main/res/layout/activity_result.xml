@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/play_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_play_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="451dp"
+        android:layout_marginBottom="232dp"
+        android:background="@color/main_red"
+        android:onClick="startGame"
+        android:text="Play again"
+        android:textColor="@color/main_bordue"
+        android:textSize="16pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"></ImageView>
+
+    <Button
+        android:id="@+id/button_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_play_again"
+        android:background="@color/main_red"
+        android:textColor="@color/main_bordue"
+        android:textSize="16pt"
+        android:layout_marginTop="-180dp"
+        android:text="Menu" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="450sp"
+        android:layout_height="480sp"
+        android:layout_above="@+id/button_menu"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-680dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="-499dp"
+        app:srcCompat="@drawable/prize" />
+
+    <TextView
+        android:layout_width="310dp"
+        android:layout_height="543dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="191dp"
+
+        android:layout_marginEnd="35dp"
+        android:text="Your score is:"
+        android:textColor="@color/main_red"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/scoreCount"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="90dp"
+        android:text="0"
+        android:textColor="@color/main_red"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/best_view"
+        android:layout_width="274dp"
+        android:layout_height="97dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="338dp"
+        android:text="TextView"
+        android:textColor="@color/main_red"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
